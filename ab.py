@@ -42,7 +42,7 @@ TM_COL_MAP = {
 }
 
 PITCH_TYPE_NORMALIZE = {
-    'Four-Seam': 'Fastball', 'FourSeam': 'Fastball', '4-Seam': 'Fastball', '4S': 'Fastball',
+    'Four-Seam': 'Fastball', 'FourSeam': 'Fastball', 'FourSeamFastBall': 'Fastball', 'TwoSeamFastBall': 'Fastball',
     'FF': 'Fastball', 'FA': 'Fastball', 'Fastball': 'Fastball',
     'Two-Seam': 'Sinker', 'TwoSeam': 'Sinker', '2S': 'Sinker', 'SI': 'Sinker',
     'Sinker': 'Sinker', 'SN': 'Sinker',
@@ -55,7 +55,7 @@ PITCH_TYPE_NORMALIZE = {
     'Splitter': 'Splitter', 'SP': 'Splitter', 'FS': 'Splitter', 'Split': 'Splitter',
 }
 
-VALID_PITCH_TYPES = ["Fastball", "Sinker", "Slider", "Curveball", "ChangeUp", "Cutter", "Splitter"]
+VALID_PITCH_TYPES = ["Fastball", "FourSeamFastBall","TwoSeamFastBall","Sinker", "Slider", "Curveball", "ChangeUp", "Cutter", "Splitter"]
 
 # Pitch call display groupings — used to color-code outcomes
 CALL_COLORS = {
