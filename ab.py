@@ -225,8 +225,9 @@ if 'input_mode'    not in st.session_state: st.session_state.input_mode = "Arsen
 # Gemini 2.5 Flash — AI scouting report
 # ------------------------------------------------------------------
 import time
+import streamlit as st
 
-GEMINI_API_KEY = "AIzaSyDxXZBbww4qr8v2ew0PGEYBRVkZN-EBPIU"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 # Free-tier models (as of April 2026). gemini-2.0-flash was retired March 2026.
 # Flash-Lite has the highest free-tier quota (15 RPM / 1,000 RPD) and is more
 # than capable of a 150-word scouting report. Full Flash is a quality fallback.
